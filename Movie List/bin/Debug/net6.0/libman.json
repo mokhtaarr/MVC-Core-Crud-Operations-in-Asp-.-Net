@@ -12,6 +12,14 @@
         "font/bootstrap-icons.json",
         "font/bootstrap-icons.min.css"
       ]
+    },
+    {
+      "library": "bootstrap-datepicker@1.9.0",
+      "destination": "wwwroot/lib/bootstrap-datepicker/",
+      "files": [
+        "js/bootstrap-datepicker.min.js",
+        "css/bootstrap-datepicker.min.css"
+      ]
     }
   ]
 }

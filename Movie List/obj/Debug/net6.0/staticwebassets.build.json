@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CGLKeN7MdHwFdfe7Ac8GYb3kjLOG20S48WGcMnqwGXs=",
+  "Hash": "tnR42bh8BJE1qhOOs2GlFGxRVbFFfuOrJW439IyRprA=",
   "Source": "Movie List",
   "BasePath": "_content/Movie List",
   "Mode": "Default",
@@ -865,6 +865,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.min.css",
+      "SourceId": "Movie List",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\wwwroot\\",
+      "BasePath": "_content/Movie List",
+      "RelativePath": "lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap-datepicker\\css\\bootstrap-datepicker.min.css"
+    },
+    {
+      "Identity": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\wwwroot\\lib\\bootstrap-datepicker\\js\\bootstrap-datepicker.min.js",
+      "SourceId": "Movie List",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\wwwroot\\",
+      "BasePath": "_content/Movie List",
+      "RelativePath": "lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap-datepicker\\js\\bootstrap-datepicker.min.js"
     },
     {
       "Identity": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\wwwroot\\lib\\bootstrap-icons\\font\\bootstrap-icons.css",

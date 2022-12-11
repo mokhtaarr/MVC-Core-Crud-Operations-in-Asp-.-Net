@@ -6,7 +6,7 @@
 <hr />
 <section class="row">
     <div class="col-md-4">
-        <form method="post" asp-action="Create">
+        <form method="post" asp-action="Create" enctype="multipart/form-data">
             <div class="form-group">
                 <label class="text-muted" asp-for="Title"></label>
                 <input type="text" class="form-control" asp-for="Title" maxlength="250" />
@@ -19,6 +19,70 @@
                 </select>
                 <span asp-validation-for="GenreId" class="text-danger"></span>
             </div>
+            <div class="form-group W-50">
+                <label class="text-muted" asp-for="year"></label>
+                <input type="number" class="form-control" asp-for="year" maxlength="250" value="@(Model.year > 0 ? Model.year : string.Empty)" />
+                <span asp-validation-for="year" class="text-danger"></span>
+            </div>
+            <div class="form-group W-50">
+                <label class="text-muted" asp-for="Rate"></label>
+                <input type="number" class="form-control" asp-for="Rate" maxlength="250" value="@(Model.Rate > 0 ? Model.Rate : string.Empty)"/>
+                <span asp-validation-for="Rate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="text-muted" asp-for="StoreLine"></label>
+                <textarea class="form-control" asp-for="StoreLine" maxlength="2500" rows="4"></textarea>
+                <span asp-validation-for="StoreLine" class="text-danger"></span>
+            </div>
+             <br />
+
+            <div class="custom-file">
+                <input type="file"  class="custom-file-input" asp-for="poster" accept=".png , .jpg"/>
+                <span asp-validation-for="poster" class="text-danger"></span>
+
+            </div>
+
+
+            <br />
+            <button type="submit" class="btn btn-primary" mt-4><i class="bi bi-check"></i>Save</button>
+            <a asp-action="index" class="btn btn-outline-secondary"> <i class="bi bi-x"></i> Cancel</a>
         </form>
     </div>
+
+    <div class="col-md-4 " >
+        <div id="poster-container" class="d-none">
+            <img src="" alt="poster" class="img-thumbnall" style="height:600px; width:600px"  />
+        </div>
+    </div>
+
 </section>
+
+@section scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function(){
+            $('#poster').on('change',function(){
+                var SelectedFile = $(this).val().split('\\').pop();
+                $(this).siblings('label').text(SelectedFile)
+
+                var posterContainer = $('#poster-container');
+                var image = window.URL.createObjectURL(this.files[0]);
+
+                posterContainer.removeClass('d-none');
+                posterContainer.find('img').attr('src',image);
+            });
+            $('#year').datepicker({
+                format:'yyyy',
+                viewMode:'years',
+                minViewMode:'years',
+                autoclose:true,
+                startDate: new Date('1950-01-01'),
+                endDate: new  Date()
+
+
+            });
+        })
+    </script>
+}
