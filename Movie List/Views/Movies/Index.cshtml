@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Movie>
+
+   @{
+       ViewData ["Title"] = "Movies";
+   }
+   <h2>
+      <i class="bi bi-film"></i> Movies
+   </h2>
+   <hr />
+<a asp-action="Create" class="btn btn-primary"><i class="bi bi-plus"></i> Add Movies</a>
+
+   <div class="mt-4">
+       @if(!Model.Any())
+       {
+        <div class="alert alert-warning" role="alert">
+            <i class="bi bi-exclamation-triangle"></i> No Movies Found!
+        </div>
+       }else{
+           <ul>
+             @foreach(var movie in Model)
+             { 
+               <li>@movie.Title</li>
+             }
+          </ul>
+       }
+
+   </div>
