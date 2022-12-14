@@ -23,6 +23,24 @@ textarea{
     resize:none;
 }
 
+.poster{
+    min-height:236px;
+    background-size: 100%;
+    transition:all 0.3s ease-in-out;
+
+}
+
+    .poster:hover {
+        min-height: 236px;
+        background-size: 125%;
+        transition: all 0.3s ease-in-out;
+        background-position: center;
+    }
+
+
+.mt-60-px{
+    margin-top:60px;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{

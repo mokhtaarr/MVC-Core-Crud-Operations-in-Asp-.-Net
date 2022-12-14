@@ -1,11 +1,19 @@
 using Microsoft.EntityFrameworkCore;
 using Movie_List.Models;
+using NToastNotify;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<ApplictionDbContext>(Options => Options.UseSqlServer(builder.Configuration.GetConnectionString(name: "DefaultConnection")));
 builder.Services.AddControllersWithViews();
+builder.Services.AddMvc().AddNToastNotifyToastr(new ToastrOptions()
+{
+    ProgressBar = true,
+    PositionClass = ToastPositions.TopRight,
+    PreventDuplicates = true,
+    CloseButton = true,
+});
 
 
 var app = builder.Build();

@@ -5,6 +5,7 @@ namespace Movie_List.Dtos
 {
     public class MovieDto
     {
+        public int id { get; set; }
         public string Title { get; set; }
 
         public int year { get; set; }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tnR42bh8BJE1qhOOs2GlFGxRVbFFfuOrJW439IyRprA=",
+  "Hash": "pXpcXBt8JiRiM3ylm7mSH7jllVjPzwzmqwktlA0zjDk=",
   "Source": "Movie List",
   "BasePath": "_content/Movie List",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Facebook\\.nuget\\packages\\ntoastnotify\\7.0.0\\staticwebassets\\noty.js",
+      "SourceId": "NToastNotify",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Facebook\\.nuget\\packages\\ntoastnotify\\7.0.0\\staticwebassets\\",
+      "BasePath": "_content/NToastNotify",
+      "RelativePath": "noty.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Facebook\\.nuget\\packages\\ntoastnotify\\7.0.0\\staticwebassets\\noty.js"
+    },
+    {
+      "Identity": "C:\\Users\\Facebook\\.nuget\\packages\\ntoastnotify\\7.0.0\\staticwebassets\\toastr.js",
+      "SourceId": "NToastNotify",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Facebook\\.nuget\\packages\\ntoastnotify\\7.0.0\\staticwebassets\\",
+      "BasePath": "_content/NToastNotify",
+      "RelativePath": "toastr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Facebook\\.nuget\\packages\\ntoastnotify\\7.0.0\\staticwebassets\\toastr.js"
+    },
     {
       "Identity": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Movie List.styles.css",
       "SourceId": "Movie List",
@@ -100,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\wwwroot\\lib\\bootbox.js\\bootbox.min.js",
+      "SourceId": "Movie List",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\wwwroot\\",
+      "BasePath": "_content/Movie List",
+      "RelativePath": "lib/bootbox.js/bootbox.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootbox.js\\bootbox.min.js"
     },
     {
       "Identity": "F:\\iti\\WebApi\\Movie List cruadOperation\\Movie List\\Movie List\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
